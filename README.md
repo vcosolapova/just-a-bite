@@ -5,7 +5,7 @@ A web-based ordering app: browse a menu, add items to a cart, and check out.
 ## Getting Started
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/vcosolapova/just-a-bite.git
 cd just-a-bite
 npm install
 npm run dev
