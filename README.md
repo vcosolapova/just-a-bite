@@ -27,12 +27,8 @@ Claude was used as a thinking partner first: stress testing the requirements, su
 
 ### Running Tests
 
-> Note: this project uses `import { defineConfig } from 'vitest/config'`
-> in vite.config.ts (Vitest v4 dropped the `/// <reference types="vitest" />`
-> approach), and imports `@testing-library/jest-dom/vitest` in setup.ts
-> rather than the bare package (required for correct type augmentation
-> under Vitest's expect). Both are intentional and correct for the
-> installed tool versions.
+> [!NOTE]
+> This project uses `import { defineConfig } from 'vitest/config'` in vite.config.ts (Vitest v4 dropped the `/// <reference types="vitest" />` approach), and imports `@testing-library/jest-dom/vitest` in setup.ts rather than the bare package (required for correct type augmentation under Vitest's expect). Both are intentional and correct for the installed tool versions.
 
 Run the full test suite:
 npm run test
@@ -59,4 +55,5 @@ Credentials for testing:
 
 From the admin panel you can view all past orders and delete individual orders.
 
-Important: this is a basic demonstration of how the app could be expanded with an admin layer. In a production environment authentication must be taken seriously. Hardcoded credentials, client-side auth checks, and sessionStorage are not secure patterns for real user data. A production implementation would require server-side authentication, hashed credentials, secure session tokens, and role-based access control.
+> [!NOTE]
+> This is a basic demonstration of how the app could be expanded with an admin layer. In a production environment authentication must be taken seriously. Hardcoded credentials, client-side auth checks, and sessionStorage are not secure patterns for real user data. A production implementation would require server-side authentication, hashed credentials, secure session tokens, and role-based access control.
