@@ -14,7 +14,10 @@ export default function AdminLogin() {
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
 
-    if (username.trim() === ADMIN_USERNAME && password.trim() === ADMIN_PASSWORD) {
+    if (
+      username.trim() === ADMIN_USERNAME &&
+      password.trim() === ADMIN_PASSWORD
+    ) {
       sessionStorage.setItem(ADMIN_AUTH_KEY, "true");
       navigate("/admin/orders");
       return;
@@ -23,6 +26,7 @@ export default function AdminLogin() {
     setError(true);
   };
 
+  // comment worth noting
   return (
     <div className="min-h-screen bg-gray-100">
       <div className="h-1.5 bg-gray-900" />
