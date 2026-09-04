@@ -41,7 +41,7 @@ export default function AdminOrders() {
       return next;
     });
   };
-
+// merge conflic here
   const handleDelete = (orderId: string) => {
     const remaining = orders.filter((order) => order.orderId !== orderId);
     setOrders(remaining);
